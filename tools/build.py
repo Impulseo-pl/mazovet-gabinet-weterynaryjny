@@ -78,7 +78,7 @@ def header(page, over=False):
         parts.append('<a href="%s"%s>%s</a>' % (href, cur, label))
     links = ''.join(parts)
     return f'''
-<header class="site-head{' over' if over else ''}">
+<header class="site-head">
   <div class="topbar">
     <div class="wrap">
       <span class="ti">{ICON['pin']} {ADRES}</span>
@@ -87,16 +87,16 @@ def header(page, over=False):
     </div>
   </div>
   <div class="head-bg">
-  <div class="head-main">
-    <a class="brand" href="index.html">
-      <img src="assets/img/logo.png" alt="Mazovet, Gabinet Weterynaryjny" width="461" height="307">
-    </a>
-    <a class="btn btn-primary btn-sm head-cta" href="tel:{TEL_HREF}">{ICON['phone']} {TEL}</a>
-    <button class="burger" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="mainnav" id="mainnav" aria-label="Główna">{links}</nav>
+    <div class="head-in">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Mazovet, Gabinet Weterynaryjny" width="461" height="307">
+      </a>
+      <nav class="mainnav" id="mainnav" aria-label="Główna">{links}</nav>
+      <a class="btn btn-primary btn-sm head-cta" href="tel:{TEL_HREF}">{ICON['phone']} {TEL}</a>
+      <button class="burger" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 '''

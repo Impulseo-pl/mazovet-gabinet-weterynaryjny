@@ -199,7 +199,7 @@ def build_all(build, I, TEL, TEL_HREF, MAIL, ADRES):
     build('index.html',
           'Gabinet Weterynaryjny Mazovet | weterynarz Bielsk, Sierpecka 48',
           'Gabinet weterynaryjny Mazovet w Bielsku (ul. Sierpecka 48): psy, koty, bydło i konie. Rejestracja telefoniczna: 794 206 306. Pn–pt 8:00–18:00, sob 9:00–13:00.',
-          index, over=True)
+          index)
 
     # ------------------------------------------------------------ PSY I KOTY
     psy = '''
