@@ -66,7 +66,7 @@ def head(title, desc, page, og_img='assets/img/klinika.webp'):
 <body>
 
 <div class="demo-bar">
-  <b>Demo Impulseo</b> — propozycja strony dla gabinetu Mazovet. Dane i zdjęcia obiektu z wizytówki Google i Facebooka, zdjęcia zwierząt poglądowe.
+  <b>Demo Impulseo</b>: propozycja strony dla gabinetu Mazovet. Dane i zdjęcia obiektu z wizytówki Google i Facebooka, zdjęcia zwierząt poglądowe.
 </div>
 '''
 
@@ -89,7 +89,7 @@ def header(page, over=False):
   <div class="head-bg">
   <div class="head-main">
     <a class="brand" href="index.html">
-      <img src="assets/img/logo.png" alt="Mazovet — Gabinet Weterynaryjny" width="461" height="307">
+      <img src="assets/img/logo.png" alt="Mazovet, Gabinet Weterynaryjny" width="461" height="307">
     </a>
     <a class="btn btn-primary btn-sm head-cta" href="tel:{TEL_HREF}">{ICON['phone']} {TEL}</a>
     <button class="burger" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
@@ -109,7 +109,7 @@ def footer():
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <img class="flogo" src="assets/img/logo.png" alt="Mazovet — Gabinet Weterynaryjny" width="461" height="307">
+        <img class="flogo" src="assets/img/logo.png" alt="Mazovet, Gabinet Weterynaryjny" width="461" height="307">
         <p class="mt0">Gabinet weterynaryjny lek. wet. Pawła Kosno.<br>Psy, koty, konie i zwierzęta gospodarskie.</p>
         <p><a href="https://www.facebook.com/profile.php?id=100063583105562" rel="noopener">{ICON['fb']} Facebook</a></p>
       </div>
@@ -140,7 +140,7 @@ def footer():
 def ldjson(page):
     return '''
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VeterinaryCare","name":"Mazovet — Gabinet Weterynaryjny lek. wet. Paweł Kosno",
+{"@context":"https://schema.org","@type":"VeterinaryCare","name":"Mazovet, Gabinet Weterynaryjny lek. wet. Paweł Kosno",
 "telephone":"+48 794 206 306","email":"gw.mazovet@wp.pl",
 "address":{"@type":"PostalAddress","streetAddress":"ul. Sierpecka 48","postalCode":"09-230","addressLocality":"Bielsk","addressRegion":"mazowieckie","addressCountry":"PL"},
 "geo":{"@type":"GeoCoordinates","latitude":52.6791114,"longitude":19.8009251},

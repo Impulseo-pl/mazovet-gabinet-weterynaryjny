@@ -1,4 +1,4 @@
-/* Mazovet — demo Impulseo */
+/* Mazovet, demo Impulseo */
 (function () {
   document.documentElement.classList.add('js');
 
@@ -61,7 +61,7 @@
     });
   }
 
-  // formularz — w demie nie wysyła
+  // formularz: w demie nie wysyła
   var form = document.querySelector('form[data-demo-form]');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -69,7 +69,7 @@
       var note = form.querySelector('.form-result');
       if (note) {
         note.hidden = false;
-        note.textContent = 'To wersja demonstracyjna — formularz uruchamiamy przy wdrożeniu strony. W pilnej sprawie prosimy o telefon: 794 206 306.';
+        note.textContent = 'To wersja demonstracyjna, formularz uruchamiamy przy wdrożeniu strony. W pilnej sprawie prosimy o telefon: 794 206 306.';
       }
     });
   }
